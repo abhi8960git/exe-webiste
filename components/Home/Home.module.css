@@ -1,0 +1,27 @@
+.section {
+    width: 70vw;
+    margin: auto;
+    display: flex;
+    padding: 5vh 0;
+    gap: 5vw;
+    flex-direction: row;
+}
+
+.section .text {
+    color: white;
+    font-size: 1.5vw;
+    font-family: "eros Book";
+    margin: auto;
+}
+
+@media screen and (max-width: 900px) {
+    .section {
+        width: 100vw;
+        flex-direction: column;
+        align-items: center;
+    }
+    .section .text {
+        font-size: 2.5vw;
+        padding: 10px;
+    }
+}

@@ -1,0 +1,11 @@
+.footer {
+    width: 100vw;
+    font-size: 20px;
+    color: #f1f1f1bb;
+    padding: 1vh;
+    text-align: center;
+    font-family: "eros Book";
+    background-color: black;
+    position: absolute;
+    bottom: 0px;
+}

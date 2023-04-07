@@ -1,0 +1,6 @@
+.social {
+    width: 70vw;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+}

@@ -1,0 +1,96 @@
+.navbar {
+    margin: 2vw;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #f1f1f133;
+    width: 4vw;
+    border-radius: 1vw;
+    text-align: center;
+}
+
+.navbar li {
+    list-style-type: none;
+    position: relative;
+    font-size: 2vw;
+    color: white;
+    padding: 1vh 0;
+}
+
+.navbar li a svg {
+    width: 80%;
+    padding: 16px 0;
+    color: white;
+    border-radius: 1vw;
+    transition: 0.5s;
+}
+.navbar li:hover a svg {
+    background-color: rgba(7, 184, 248, 0.605);
+    transform: translateX(0.25vw);
+}
+
+.navbar li:nth-child(1)::after {
+    content: "home";
+}
+.navbar li:nth-child(2)::after {
+    content: "About us";
+}
+
+.navbar li:nth-child(3)::after {
+    content: "Our Team";
+}
+
+.navbar li:nth-child(4)::after {
+    content: "Projects";
+}
+
+.navbar li:nth-child(5)::after {
+    content: "Events";
+}
+.navbar li::after {
+    position: absolute;
+    width: fit-content;
+    left: 100%;
+    font-size: 1.5vw;
+    padding: 0.5vh;
+    opacity: 0;
+    font-family: "eros";
+}
+
+.navbar li:hover::after {
+    opacity: 1;
+}
+
+@media screen and (max-width: 900px) {
+    .navbar {
+        bottom: 4vh;
+        left: 50%;
+        transform: translateX(-50%);
+        top: auto;
+        flex-direction: row;
+        font-size: 10vw;
+        width: fit-content;
+    }
+
+    .navbar li {
+        padding: 2vh 2vw;
+    }
+    .navbar li a svg {
+        height: 3vh;
+        padding: 1vw;
+    }
+
+    .navbar li:hover a svg {
+        transform: translateY(-1vw);
+        transition: 0.5s;
+    }
+    .navbar li::after {
+        width: fit-content;
+        left: 2.1vw;
+        top: -4vw;
+        background-color: #000000bb;
+        font-size: 2vw;
+    }
+}
