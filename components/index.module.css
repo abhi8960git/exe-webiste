@@ -1,0 +1,144 @@
+/* Default styles */
+@font-face {
+    font-family: "good";
+    src: url('../public/Eros3D.ttf');
+}
+@font-face {
+    font-family: "good";
+    src: url('../public/Eros.ttf');
+}
+@font-face {
+    font-family: "Verygood";
+    src: url('../public/ErosBook.ttf');
+}
+
+.container {
+    display: flex;
+    margin: 40px;
+    margin-top:10px;
+}
+
+.events {
+    display: flex;
+    color:white;
+    border: 2px solid white;
+    max-width: 1400px;
+    margin: auto;
+    padding: 30px;
+    gap: 30px;
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(7px);
+    -webkit-backdrop-filter: blur(7px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.card {
+    display: flex;
+    gap: 5px;
+}
+
+.card img{
+    /* border:2px solid white; */
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 5px;
+    font-family:'Verygood' ;
+}
+
+.description h1{
+    font-size: 5vw;
+    /* border: 2px solid white; */
+}
+
+.mentors{
+    font-size: 27px;
+}
+
+.detail{
+    font-size:17px;
+}
+
+/* Media queries */
+@media only screen and (max-width: 800px){
+
+    .events {
+        display: flex;
+        flex-direction: column;
+        align-items: center;        
+    }
+
+    .description h1{
+        font-size: 8vw;
+    }
+
+    .description{
+        text-align: center;
+    }
+
+    .mentors{
+        font-size: 4vw;
+    }
+    
+    .detail{
+        font-size:2vw;
+    }
+
+}
+
+@media only screen and (max-width: 600px){
+
+    .events {
+        display: flex;
+        flex-direction: column;
+        align-items: center;        
+    }
+
+    .description h1{
+        font-size: 10vw;
+    }
+
+    .description{
+        text-align: center;
+    }
+
+    .mentors{
+        font-size: 5vw;
+    }
+    
+    .detail{
+        font-size:2.5vw;
+    }
+
+}
+
+@media only screen and (max-width: 400px){
+
+    .events {
+        display: flex;
+        flex-direction: column;
+        align-items: center;        
+    }
+
+    .description h1{
+        font-size: 12vw;
+    }
+
+    .description{
+        text-align: center;
+    }
+
+    .mentors{
+        font-size: 6vw;
+    }
+    
+    .detail{
+        font-size:3vw;
+    }
+
+}
