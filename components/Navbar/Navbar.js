@@ -3,7 +3,6 @@ import {
     faCalendarDays,
     faCircleInfo,
     faHome,
-    faListDots,
     faUsers,
 } from "@fortawesome/free-solid-svg-icons";
 
