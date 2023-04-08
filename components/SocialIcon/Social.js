@@ -1,11 +1,40 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+    faYoutube,
+    faFacebook,
+    faTwitter,
+    faInstagram,
+} from "@fortawesome/free-brands-svg-icons";
+import Link from "next/link";
 import classes from "./Social.module.css";
-import Tags from "./Tags";
-import { faHome } from "@fortawesome/free-solid-svg-icons";
 
 const Social = () => {
     return (
         <div className={classes.social}>
-            <Tags icon={faHome} />
+            <Link href="/">
+                <FontAwesomeIcon
+                    icon={faYoutube}
+                    style={{ fontSize: "30px" }}
+                />
+            </Link>
+            <Link href="/">
+                <FontAwesomeIcon
+                    icon={faFacebook}
+                    style={{ fontSize: "30px" }}
+                />
+            </Link>
+            <Link href="/">
+                <FontAwesomeIcon
+                    icon={faTwitter}
+                    style={{ fontSize: "30px" }}
+                />
+            </Link>
+            <Link href="/">
+                <FontAwesomeIcon
+                    icon={faInstagram}
+                    style={{ fontSize: "30px" }}
+                />
+            </Link>
         </div>
     );
 };

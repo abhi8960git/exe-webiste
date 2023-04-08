@@ -1,4 +1,3 @@
-
 @font-face {
     font-family: "eros";
     src: url("../eros/Eros.ttf");
@@ -13,6 +12,11 @@
     src: url("../eros/Eros3D.ttf");
 }
 
+.swiper {
+    width: 70vw;
+    height: 100vh;
+    margin: auto;
+}
 
 * {
     margin: 0;

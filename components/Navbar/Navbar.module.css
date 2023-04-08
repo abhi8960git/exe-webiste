@@ -6,7 +6,7 @@
     top: 50%;
     transform: translateY(-50%);
     background-color: #f1f1f133;
-    width: 4vw;
+    width: 70px;
     border-radius: 1vw;
     z-index: 2;
     text-align: center;
@@ -44,17 +44,13 @@
 }
 
 .navbar li:nth-child(4)::after {
-    content: "Projects";
-}
-
-.navbar li:nth-child(5)::after {
     content: "Events";
 }
 .navbar li::after {
     position: absolute;
     width: fit-content;
     left: 100%;
-    font-size: 1.5vw;
+    font-size: 25px;
     padding: 0.5vh;
     opacity: 0;
     font-family: "eros";
@@ -94,4 +90,8 @@
         background-color: #000000bb;
         font-size: 2vw;
     }
+}
+
+.active svg {
+    background-color: black;
 }

@@ -9,12 +9,17 @@ import {
 
 import classes from "./Navbar.module.css";
 import Link from "next/link";
+import { useRouter } from "next/router";
 
 const Navbar = () => {
+    const router = useRouter().pathname;
     return (
         <ul className={classes.navbar}>
             <li>
-                <Link href="/">
+                <Link
+                    href="/"
+                    className={router == "/" ? classes.active : undefined}
+                >
                     <FontAwesomeIcon
                         style={{ fontSize: "25px" }}
                         icon={faHome}
@@ -22,7 +27,12 @@ const Navbar = () => {
                 </Link>
             </li>
             <li>
-                <Link href="/AboutUs">
+                <Link
+                    href="/AboutUs"
+                    className={
+                        router == "/AboutUs" ? classes.active : undefined
+                    }
+                >
                     <FontAwesomeIcon
                         style={{ fontSize: "25px" }}
                         icon={faCircleInfo}
@@ -30,7 +40,12 @@ const Navbar = () => {
                 </Link>
             </li>
             <li>
-                <Link href="/">
+                <Link
+                    href="/"
+                    className={
+                        router == "/OurTeam" ? classes.active : undefined
+                    }
+                >
                     <FontAwesomeIcon
                         style={{ fontSize: "25px" }}
                         icon={faUsers}
@@ -38,15 +53,10 @@ const Navbar = () => {
                 </Link>
             </li>
             <li>
-                <Link href="/">
-                    <FontAwesomeIcon
-                        style={{ fontSize: "25px" }}
-                        icon={faListDots}
-                    ></FontAwesomeIcon>
-                </Link>
-            </li>
-            <li>
-                <Link href="/Events">
+                <Link
+                    href="/Events"
+                    className={router == "/Events" ? classes.active : undefined}
+                >
                     <FontAwesomeIcon
                         style={{ fontSize: "25px" }}
                         icon={faCalendarDays}

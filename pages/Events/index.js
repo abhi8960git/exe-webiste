@@ -1,6 +1,7 @@
 import React from "react";
 import { Event } from "../../components/index";
 import css from "./section.module.css";
+
 const Events = () => {
     return (
         <>
