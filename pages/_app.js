@@ -9,8 +9,10 @@ export default function App({ Component, pageProps }) {
     return (
         <>
             <Particle />
-            <Navbar />
+          
             <Component {...pageProps} />
+
+            <Navbar />
         </>
     );
 }
