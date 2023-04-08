@@ -41,7 +41,7 @@ const Navbar = () => {
             </li>
             <li>
                 <Link
-                    href="/"
+                    href="/OurTeam"
                     className={
                         router == "/OurTeam" ? classes.active : undefined
                     }
