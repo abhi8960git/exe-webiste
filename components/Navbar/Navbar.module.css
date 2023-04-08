@@ -8,6 +8,7 @@
     background-color: #f1f1f133;
     width: 4vw;
     border-radius: 1vw;
+    z-index: 2;
     text-align: center;
 }
 

@@ -1,15 +1,15 @@
 /* Default styles */
 @font-face {
     font-family: "good";
-    src: url('../public/Eros3D.ttf');
+    src: url('../eros/Eros3D.ttf');
 }
 @font-face {
     font-family: "good";
-    src: url('../public/Eros.ttf');
+    src: url('../eros/Eros.ttf');
 }
 @font-face {
     font-family: "Verygood";
-    src: url('../public/ErosBook.ttf');
+    src: url('../eros/ErosBook.ttf');
 }
 
 .container {
@@ -22,7 +22,7 @@
     display: flex;
     color:white;
     border: 2px solid white;
-    max-width: 1400px;
+    max-width: 70vw;
     margin: auto;
     padding: 30px;
     gap: 30px;
@@ -141,4 +141,42 @@
         font-size:3vw;
     }
 
+}
+
+/* Card css start here  */
+
+.AboutUs{
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(7px);
+    -webkit-backdrop-filter: blur(7px);
+    border-radius: 5px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+ width: 330px;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ text-align: center;
+ font-family: "Verygood";
+ color: white;
+ padding:15px 5px;
+}
+
+.detail p{
+    /* border: 2px solid wheat; */
+    background: rgba( 245, 222, 179, 0.55 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 5px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    color: black;
+    
+
+}
+
+.teamImg{
+    border:3px solid  rgba( 245, 222, 179, 0.55 );
+    border-radius: 5px;
 }

@@ -22,7 +22,7 @@ const Navbar = () => {
                 </Link>
             </li>
             <li>
-                <Link href="/">
+                <Link href="/AboutUs">
                     <FontAwesomeIcon
                         style={{ fontSize: "25px" }}
                         icon={faCircleInfo}

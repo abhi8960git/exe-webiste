@@ -1,3 +1,19 @@
+
+@font-face {
+    font-family: "eros";
+    src: url("../eros/Eros.ttf");
+}
+@font-face {
+    font-family: "Eros Book";
+    src: url("../eros/ErosBook.ttf");
+}
+
+@font-face {
+    font-family: "Eros 3D";
+    src: url("../eros/Eros3D.ttf");
+}
+
+
 * {
     margin: 0;
     padding: 0;
