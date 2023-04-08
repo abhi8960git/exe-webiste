@@ -2,16 +2,21 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
-import { Pagination } from "swiper";
-
+import { EffectCoverflow, Pagination, Navigation } from "swiper";
+import classes from "./AboutUs.module.css";
+import { Card } from "@/components";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowLeft,faArrowRight } from "@fortawesome/free-solid-svg-icons";
 const AboutUs = () => {
-    const [dimension, setDimension] = useState([
-        window.innerHeight,
-        window.innerWidth,
-    ]);
-    console.log(innerHeight);
+    // const [dimension, setDimension] = useState([
+    //     window.innerHeight,
+    //     window.innerWidth,
+    // ]);
+    // console.log(innerHeight);
     return (
-        <>
+       
+        <div>
+                  <h1 className={classes.head}>About Us</h1>
             <Swiper
                 effect={"coverflows"}
                 grabCursor={true}
