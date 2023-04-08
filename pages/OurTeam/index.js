@@ -6,6 +6,8 @@ const OurTeam = () => {
     <div>
    <h1 className={css.head}>Our Team</h1>
         <MemberCard></MemberCard>
+        <MemberCard></MemberCard>
+
     </div>
   )
 }
