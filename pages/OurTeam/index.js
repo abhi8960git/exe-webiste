@@ -1,72 +1,31 @@
 import React from "react";
-import { MemberCard } from "../../components/index";
 import css from "./ourTeam.module.css";
+import Card from "@/components/MemberCard/Card";
+import Slide from "@/components/MemberCard/Slide";
 
 const OurTeam = (props) => {
     const final = props.data.filter((item) => item.year == 4);
     const third = props.data.filter((item) => item.year == 3);
     const second = props.data.filter((item) => item.year == 2);
     const first = props.data.filter((item) => item.year == 1);
+
     return (
         <div>
             <h1 className={css.head}>Our Team</h1>
-
             <h1 className={css.FyHead}>Final Year</h1>
-
-            <div className={css.finalYear}>
-                {final.map((item) => (
-                    <MemberCard
-                        key={item.id}
-                        image={item.imageURL}
-                        name={item.name}
-                        tagline={item.tagline}
-                        github={item.github}
-                        LinkedIn={item.linkedin}
-                    />
-                ))}
-            </div>
-            <h1 className={css.FyHead}>Third Year</h1>
-
-            <div className={css.finalYear}>
-                {third.map((item) => (
-                    <MemberCard
-                        key={item.id}
-                        image={item.imageURL}
-                        name={item.name}
-                        tagline={item.tagline}
-                        github={item.github}
-                        LinkedIn={item.linkedin}
-                    />
-                ))}
-            </div>
+            <Card year={final} />
+            <h1 className={css.FyHead}>Third Year</h1>\
+            <Slide>
+                <Card year={third} />
+            </Slide>
             <h1 className={css.FyHead}>Second Year</h1>
-
-            <div className={css.finalYear}>
-                {second.map((item) => (
-                    <MemberCard
-                        key={item.id}
-                        image={item.imageURL}
-                        name={item.name}
-                        tagline={item.tagline}
-                        github={item.github}
-                        LinkedIn={item.linkedin}
-                    />
-                ))}
-            </div>
+            <Slide>
+                <Card year={second} />
+            </Slide>
             <h1 className={css.FyHead}>First Year</h1>
-
-            <div className={css.finalYear}>
-                {first.map((item) => (
-                    <MemberCard
-                        key={item.id}
-                        image={item.imageURL}
-                        name={item.name}
-                        tagline={item.tagline}
-                        github={item.github}
-                        LinkedIn={item.linkedin}
-                    />
-                ))}
-            </div>
+            <Slide>
+                <Card year={first} />
+            </Slide>
         </div>
     );
 };
