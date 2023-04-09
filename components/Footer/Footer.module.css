@@ -4,11 +4,11 @@
     position: fixed;
     bottom: 0;
     background-color: black;
-    padding: 1vh;
+    padding: 0.5vh;
     gap: 10vw;
     justify-content: space-around;
     align-items: center;
-    font-size: 1vw;
+    font-size: 0.7vw;
 }
 
 .footer h1 {

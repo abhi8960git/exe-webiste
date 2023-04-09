@@ -34,28 +34,17 @@
     text-shadow: 2px 2px 8px rgba(146, 92, 148, 0.795);
 }
 
-
-
 /* social and footer implimentation  */
 
-.indexContainer{
-    margin:0;
-    padding:0;
+.indexContainer {
+    margin: 0;
+    padding: 0;
     overflow: hidden;
 }
 
-
-.social{
+.social {
     position: absolute;
-    bottom:50px;
+    bottom: 50px;
 
     border: 2px solid red;
-
 }
-
-.footer{
-    position:fixed;
-    bottom:0;
-}
-
-

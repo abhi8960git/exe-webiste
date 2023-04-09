@@ -4,18 +4,17 @@ import css from "./section.module.css";
 
 const Events = (props) => {
     return (
-        <>
-            <div className={css.container}>
-                <h1 className={css.head}>Events</h1>
-                {props.data.map((item) => (
-                    <Event
-                        image={item.image}
-                        title={item.title}
-                        detail={item.text}
-                    />
-                ))}
-            </div>
-        </>
+        <div className={css.container}>
+            <h1 className={css.head}>Events</h1>
+            {props.data.map((item) => (
+                <Event
+                    key={item.id}
+                    image={item.image}
+                    title={item.title}
+                    detail={item.text}
+                />
+            ))}
+        </div>
     );
 };
 
