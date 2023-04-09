@@ -20,8 +20,8 @@ const MemberCard = () => {
                         <Image src={membersImg}></Image>
                     </div>
                     <div class={styles.cardContent}>
-                        <h3>Luis Molina</h3>
-                        <h2>Tag Line</h2>
+                        <h3>Sai Pallavi</h3>
+                        <h2>evo Khalde </h2>
                     </div>
                 </div>
                 <ul class={styles.sci}>

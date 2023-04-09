@@ -169,6 +169,14 @@
 
 
 
+.mentors{
+    border: 2px solid white;
+    display: inline;
+    padding:7px;
+    border-left: none;
+    border-right: none;
+}
+
 
 .detail p{
     /* border: 2px solid wheat; */
@@ -220,23 +228,30 @@
 
 .container .card {
     position: relative;
-    width: 250px;
-    height: 320px;
+    /* width: 250px;
+    height: 320px; */
     margin: 1em;
-    background: rgba(255, 255, 255, 0.05);
+    /* background: rgba(255, 255, 255, 0.05);
     box-shadow: 0 15px 35px rgba(0, 0, 0, .2);
-    border-radius: 15px;
+    border-radius: 15px; */
+    background: none;
+    margin: 0;
+    padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    backdrop-filter: blur(40px);
+    /* backdrop-filter: blur(40px); */
     border: solid 2px transparent;
     background-clip: padding-box;
     transition: 0.5s;
     
 
-    box-shadow: 0px 10px 10px rgba(46, 54, 68, 0.03);
+    /* box-shadow: 0px 10px 10px rgba(46, 54, 68, 0.03); */
+}
+
+.container{
+    background:transparent;
 }
 
 .container .card .content {
@@ -245,8 +260,10 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    opacity: 0.5;
+    opacity: 1;
     transition: 0.5s;
+    background:none;
+
 }
 
 .container .card .content .img {
@@ -282,13 +299,18 @@
 
 .container .card .content .cardContent h2 {
     color: #fff;
+    border: 2px solid white;
+    padding-block:7px;
+    border-left: none;
+    border-right: none;
     /* text-transform: uppercase; */
     letter-spacing: 2px;
     font-weight: 500;
-    font-size: 18px;
+    font-size: 15px;
     text-align: center;
-    margin: 10px 0 10px;
-    line-height: 0.7em;
+    /* margin: 10px 0 10px; */
+    /* margin-block:10px ; */
+    /* line-height: 0.7em; */
     font-family: "Verygood";
     transition: 0.5s;
 }
@@ -328,7 +350,7 @@
 
 
 .container .card:hover .content {
-    opacity: 1;
+    opacity: 0.7;
     transform: translateY(-20px);
 }
 
@@ -344,7 +366,7 @@
 
 .container .card:hover .sci li {
 
-    transform: translateY(20px);
+    transform: translateY(70px);
     opacity: 1;
 }
 

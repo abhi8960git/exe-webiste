@@ -6,13 +6,19 @@ import Social from "@/Components/SocialIcon/Social";
 const Home = () => {
     return (
         <>
+
+        <div className={classes.indexContainer}>
             <div className={classes.header}>
                 <h1>TEAM .EXE</h1>
                 <p>Executing Ideas</p>
             </div>
             <Main />
-            <Social />
-            <Footer />
+
+            <div className={classes.footer}>
+                <Footer />
+            </div>
+
+            </div>
         </>
     );
 };

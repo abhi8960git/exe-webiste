@@ -1,5 +1,6 @@
 .navbar {
     margin: 2vw;
+    margin-bottom:30px;
     position: fixed;
     display: flex;
     flex-direction: column;
