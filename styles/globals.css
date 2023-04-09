@@ -51,6 +51,8 @@ html {
 body {
     font-size: 1.6rem;
     background: var(--bg);
+    width: 100vw;
+    overflow-x: hidden;
 }
 body {
     width: 100vw;
