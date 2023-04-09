@@ -6,22 +6,16 @@ import { EffectCoverflow, Pagination, Navigation } from "swiper";
 import classes from "./AboutUs.module.css";
 import { Card } from "@/components";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowLeft,faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import { faArrowLeft, faArrowRight } from "@fortawesome/free-solid-svg-icons";
 const AboutUs = () => {
-<<<<<<< HEAD
-    return (
-        <div>
-=======
     // const [dimension, setDimension] = useState([
     //     window.innerHeight,
     //     window.innerWidth,
     // ]);
     // console.log(innerHeight);
     return (
-       
         <div>
-                  <h1 className={classes.head}>About Us</h1>
->>>>>>> d896c190bb17dc061a6902c113ff5b82bd0b9fc2
+            <h1 className={classes.head}>About Us</h1>
             <Swiper
                 effect={"coverflows"}
                 grabCursor={true}
