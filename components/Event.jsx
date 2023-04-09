@@ -1,6 +1,5 @@
 import React from "react";
 import Image from "next/image";
-import tnc from "../public/Trade_Code_ojw5du.png";
 import styles from "./index.module.css";
 
 const Event = (props) => {
