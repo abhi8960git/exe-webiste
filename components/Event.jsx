@@ -1,45 +1,31 @@
-import React from 'react';
-import Image from 'next/image';
+import React from "react";
+import Image from "next/image";
 import tnc from "../public/Trade_Code_ojw5du.png";
 import styles from "./index.module.css";
 
+const Event = (props) => {
+    return (
+        <>
+            <div className={styles.container}>
+                <div className={styles.events}>
+                    <div className={styles.card}>
+                        <Image
+                            src={props.image}
+                            alt={props.title}
+                            width={250}
+                            height={250}
+                        ></Image>
+                    </div>
 
+                    <div className={styles.description}>
+                        <h1>{props.title} </h1>
+                        <p className={styles.mentors}>By: {props.mentor}</p>
+                        <p className={styles.detail}>{props.detail}</p>
+                    </div>
+                </div>
+            </div>
+        </>
+    );
+};
 
-const Event = () => {
-  return (
-    <>
-    
-
-    <div className={styles.container}>
-      <div className={styles.events}>
-
-
-        <div className={styles.card}>
-          <Image
-            src={tnc}
-            alt="trade_and_code"
-            width={250}
-            placeholder='blur'
-          >
-          </Image>
-        </div>
-
-        <div className={styles.description}>
-
-          <h1>Trade and Code </h1>
-          <p className={styles.mentors}>By: Mrigank Anand and Anant Verma</p>
-          <p className={styles.detail}>Trade and Code brings a fun amalgamation of economics and coding. It is an event based on real-time trading and problem solving while managing your balance. Each team will be provided with a certain amount of virtual currency, and they have to buy various components and libraries required to write a code (eg: loops, if-else statements, string library, classes, etc).
-            The best coders and traders win exciting prizes!</p>
-        </div>
-
-
-      </div>
-
-      </div>
-
-      
-    </>
-  )
-}
-
-export default Event
+export default Event;

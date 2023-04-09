@@ -1,17 +1,12 @@
-
-
-
 @font-face {
     font-family: "good";
     src: url("../../eros/Eros3D.ttf");
 }
 
-
 @font-face {
     font-family: "Verygood";
-    src: url('../../eros/ErosBook.ttf');
+    src: url("../../eros/ErosBook.ttf");
 }
-
 
 .head {
     font-family: "good";
@@ -31,11 +26,10 @@
     }
 }
 
-
-.FyHead{
+.FyHead {
     font-family: "Verygood";
     margin: auto;
-    
+
     text-align: center;
     padding: 40px;
     font-size: 4vw;
@@ -44,7 +38,6 @@
     text-shadow: 2px 2px 8px rgba(146, 92, 148, 0.795);
 }
 
-
 @media only screen and (max-width: 768px) {
     .FyHead {
         font-size: 40px;
@@ -52,15 +45,14 @@
     }
 }
 
-
-
-.finalYear{
-    margin:auto;
+.finalYear {
+    margin: auto;
     border-radius: 5px;
-    width: 70vw;
+    width: 80vw;
 
     display: flex;
     flex-wrap: wrap;
+    gap: 30px;
     justify-content: center;
 
     /* border: 2px solid white; */
@@ -71,5 +63,4 @@
     -webkit-backdrop-filter: blur(7px);
     border-radius: 5px;
     border: 1px solid rgba(255, 255, 255, 0.18);
-
 }
