@@ -11,7 +11,7 @@ const Card = (props) => {
             x: 0,
             transition: {
                 bounce: 0,
-                delay: 0.6,
+                delay: 0.1,
             },
         },
     };

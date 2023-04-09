@@ -31,7 +31,6 @@ const OurTeam = (props) => {
 };
 
 export async function getStaticProps(context) {
-    console.log(context);
     const response = await fetch("http://localhost:3000/api/Member");
     const data = await response.json();
     return {

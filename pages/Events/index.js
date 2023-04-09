@@ -11,8 +11,7 @@ const Events = (props) => {
                     <Event
                         image={item.image}
                         title={item.title}
-                        mentor={item.mentor}
-                        detail={item.detail}
+                        detail={item.text}
                     />
                 ))}
             </div>

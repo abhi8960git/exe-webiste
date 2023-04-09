@@ -1,7 +1,6 @@
 import Footer from "@/components/Footer/Footer";
 import classes from "@/styles/Home.module.css";
 import Main from "@/components/Home/Home";
-import Social from "@/components/SocialIcon/Social";
 
 const Home = () => {
     return (

@@ -1,11 +1,23 @@
 .footer {
+    display: flex;
     width: 100vw;
-    font-size: 20px;
-    color: #f1f1f1bb;
-    padding: 1vh;
-    text-align: center;
-    font-family: "eros Book";
+    position: fixed;
+    bottom: 0;
     background-color: black;
-    position: absolute;
-    bottom: 0px;
+    padding: 1vh;
+    gap: 10vw;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1vw;
+}
+
+.footer h1 {
+    color: #f1f1f1bb;
+    font-family: "eros book";
+}
+
+@media screen and (max-width: 900px) {
+    .footer {
+        font-size: 10px;
+    }
 }

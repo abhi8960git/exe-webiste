@@ -18,7 +18,7 @@ const Event = (props) => {
 
                     <div className={styles.description}>
                         <h1>{props.title} </h1>
-                        <p className={styles.mentors}>By: {props.mentor}</p>
+                        {/* <p className={styles.mentors}>By: {props.mentor}</p> */}
                         <p className={styles.detail}>{props.detail}</p>
                     </div>
                 </div>
