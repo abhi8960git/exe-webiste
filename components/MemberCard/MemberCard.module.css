@@ -1,0 +1,75 @@
+.container {
+    position: relative;
+    z-index: 1;
+    padding: 1em;
+    height: 350px;
+    width: 250px;
+    overflow: hidden;
+    margin: 10px;
+    border-radius: 20px;
+}
+
+.container .img {
+    position: relative;
+    margin: 0 auto;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 10px solid rgba(0, 0, 0, 0.25);
+}
+
+.container .img img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.container .cardContent h3 {
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 500;
+    font-size: 18px;
+    text-align: center;
+    margin: 15px 0 10px;
+    line-height: 1.1em;
+    font-family: "Verygood";
+    transition: 0.5s;
+}
+
+.container .cardContent h2 {
+    color: #fff;
+    border: 2px solid white;
+    padding-block: 7px;
+    border-left: none;
+    border-right: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 500;
+    font-size: 15px;
+    text-align: center;
+    font-family: "Verygood";
+    transition: 0.5s;
+}
+
+.container .sci {
+    display: flex;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .sci li {
+    list-style: none;
+    margin: 0 10px;
+    transition: 0.5s;
+}
+
+.container .sci li a svg {
+    font-size: 24px;
+    color: white;
+}
