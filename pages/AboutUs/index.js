@@ -9,41 +9,43 @@ const index = () => {
     const [width, setWidth] = useState(0);
     const carousel = useRef();
 
-    useEffect(()=>{
-    console.log(carousel.current.scrollWidth, carousel.current.offsetWidth );
-    setWidth(carousel.current.scrollWidth - carousel.current.offsetWidth );
-    },[])
+    useEffect(() => {
+        console.log(carousel.current.scrollWidth, carousel.current.offsetWidth);
+        setWidth(carousel.current.scrollWidth - carousel.current.offsetWidth);
+    }, [])
 
     return (
-        <div className="App">
+        <div className={css.AboutUs}>
 
-           
+
 
             <h1 className={css.head}>About Us</h1>
 
+            <div className={css.aboutUsContainer}>
+                <motion.div ref={carousel} className={css.carousel}>
+                    <motion.div drag="x" dragConstraints={{ right: 0, left: -width }} className={css.innerCarousel}>
 
-            <motion.div ref={carousel} className={css.carousel}>
-                <motion.div drag="x" dragConstraints={{ right: 0, left: -width }} className={css.innerCarousel}>
+                        <motion.div className={css.Item}>
+                            <Card></Card>
+                        </motion.div>
 
-                    <motion.div className="item">
-                        <Card></Card>
-                    </motion.div>
+                        <motion.div className={css.Item}>
+                            <Card></Card>
+                        </motion.div>
 
-                    <motion.div className="item">
-                        <Card></Card>
-                    </motion.div>
+                        <motion.div className={css.Item}>
+                            <Card></Card>
+                        </motion.div>
 
-                    <motion.div className="item">
-                        <Card></Card>
-                    </motion.div>
+                        <motion.div className={css.Item}>
+                            <Card></Card>
+                        </motion.div>
 
-                    <motion.div className="item">
-                        <Card></Card>
                     </motion.div>
 
                 </motion.div>
 
-            </motion.div>
+            </div>
         </div>
     )
 }

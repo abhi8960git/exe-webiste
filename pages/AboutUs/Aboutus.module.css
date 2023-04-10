@@ -1,3 +1,9 @@
+
+@font-face {
+    font-family: "good";
+    src: url("../../eros/Eros3D.ttf");
+}
+
 .container {
     max-width: 124rem;
     padding: 4rem 1rem;
@@ -138,7 +144,8 @@
     font-size: 7vw;
     width: 100vw;
     color: rgb(47, 205, 238);
-    text-shadow: 0px 0px 20px red;
+    text-shadow: 2px 2px 8px rgba(146, 92, 148, 0.795);
+
 }
 
 @media only screen and (max-width: 768px) {
@@ -151,15 +158,48 @@
 
 /* swiper frammer motion */
 
+.AboutUs{
+    /* border: 2px solid white; */
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  
+}
+
+
+
 .innerCarousel{
     display:flex;
     /* background: skyblue; */
 }
 
 .carousel{
-    margin: auto;
-    margin-inline: 70px;
+    width: 80vw;
+    /* display: flex; */
+    margin:0 auto;
+    /* margin-inline: 70px; */
     cursor:grab;
     overflow: hidden;
+    /* border: 2px solid white; */
+    box-sizing: border-box;
+    padding:20px;
+    border-radius: 10px;
+    /* border-left: none;
+    border-right: none; */
 
+}
+
+.Item{
+
+    margin: 10px;
+}
+
+.aboutUsContainer{
+    margin: auto;
+    width: 84vw;
+    border: 2px solid white;
+    border-left: none;
+    border-right: none;
 }
