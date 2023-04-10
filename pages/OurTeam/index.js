@@ -26,6 +26,9 @@ const OurTeam = (props) => {
             <Slide>
                 <Card year={first} />
             </Slide>
+            
+            <div className={css.navSolver}></div>
+
         </div>
     );
 };

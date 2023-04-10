@@ -674,7 +674,7 @@ const members = [
         name: "Aditya Kapoor",
         year: 2,
         position: "Executive Member",
-        tagline: "Yoroshiku Onegaishimasu!",
+        tagline: "I'll take a Potato Chip........and Eat It!!",
         imageURL:
             "https://res.cloudinary.com/dqosq5kze/image/upload/v1678532877/members2023exe/IMG_2250_-_21BCE012_ADITYA_KAPOOR_katbgh.jpg",
         github: "https://github.com/detoroito-sama",
@@ -848,6 +848,18 @@ const members = [
         github: "https://github.com/Shivam077536",
         linkedin: "https://www.linkedin.com/in/shivam-892a46231",
     },
+    {
+        id: 115,
+        name: "Shreya Dhiman",
+        year: 2,
+        position: "Executive Member",
+        tagline: "",
+        imageURL:
+            "https://res.cloudinary.com/dqosq5kze/image/upload/v1678534675/members2023exe/IMG20230121140422_-_21bcs100__Shivam_gwimuh.jpg",
+        github: "https://github.com/Shivam077536",
+        linkedin: "https://www.linkedin.com/in/shivam-892a46231",
+    }
+
 ];
 
 const handler = (req, res) => {

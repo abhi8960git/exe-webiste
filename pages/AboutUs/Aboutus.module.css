@@ -203,3 +203,40 @@
     border-left: none;
     border-right: none;
 }
+
+
+
+
+/* Contact Us form  */
+
+.ContactUs{
+    width:60vw;
+    border:2px solid white;
+margin:auto;
+
+
+    
+}
+
+.Container h1{
+    font-family: "good";
+
+
+}
+
+
+.input{
+    background: none;
+
+padding:10px;
+
+border:2px solid white;
+
+border-left:none;
+border-right:none;
+border-top: none;
+
+
+
+}
+

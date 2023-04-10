@@ -36,6 +36,10 @@
     width: 100vw;
     color: rgb(47, 205, 238);
     text-shadow: 2px 2px 8px rgba(146, 92, 148, 0.795);
+
+    /* border: 2px solid  rgb(47, 205, 238);
+    display: inline; */
+
 }
 
 @media only screen and (max-width: 768px) {
@@ -43,4 +47,23 @@
         font-size: 40px;
         padding: 20px;
     }
+}
+
+
+.navSolver{
+    margin:0;
+    padding:0;
+    display: none;
+}
+
+
+@media only screen and (max-width: 900px ){
+
+    .navSolver{
+        display:block;
+        height: 150px;
+        /* border: 1px solid white; */
+        width: 100vw;
+    }
+
 }

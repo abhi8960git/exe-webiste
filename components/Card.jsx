@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 import sai from "../public/5cb05dd324000080094f68d5.jpeg";
 import styles from "../components/index.module.css";
-const Card = () => {
+const Card = (props) => {
     return (
         <div className="swiper-slide">
             <div className={styles.AboutUs}>
