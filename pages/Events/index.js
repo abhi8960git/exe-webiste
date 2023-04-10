@@ -1,18 +1,10 @@
 import React from "react";
-// import Events from "@/Components/Events";
 import css from "./section.module.css";
-import EventCards from "@/components/EventsCard"
-import Event from "@/components/EventsCard/Event"
-
-import Slide from "@/components/MemberCard/Slide.js"
+import EventCards from "@/components/EventsCard";
 
 const Events = (props) => {
-
-
-    const UpcomingEvents = props.data.filter(item => item.id == 2);
-    const PastEvents = props.data.filter(item => item.id == 1);
-    // console.log(UpcomingEvents);
-    // console.log(PastEvents);
+    const UpcomingEvents = props.data.filter((item) => item.id == 2);
+    const PastEvents = props.data.filter((item) => item.id == 1);
 
     return (
         <div className={css.container}>
@@ -20,18 +12,10 @@ const Events = (props) => {
 
             <h2 className={css.name}>Upcoming Events</h2>
 
-            
+            <EventCards events={UpcomingEvents}> </EventCards>
 
-              <EventCards events={UpcomingEvents}  > </EventCards>
-
-           
-           
-             
             <h2 className={css.name}>Past Events</h2>
-        <EventCards events={PastEvents}></EventCards>
-            
-            
-
+            <EventCards events={PastEvents}></EventCards>
 
             <div className={css.navSolver}></div>
         </div>
