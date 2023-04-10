@@ -147,3 +147,19 @@
         padding: 20px;
     }
 }
+
+
+/* swiper frammer motion */
+
+.innerCarousel{
+    display:flex;
+    /* background: skyblue; */
+}
+
+.carousel{
+    margin: auto;
+    margin-inline: 70px;
+    cursor:grab;
+    overflow: hidden;
+
+}
