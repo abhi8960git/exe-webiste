@@ -1,5 +1,5 @@
 /* Default styles */
-@font-face {
+/* @font-face {
     font-family: "good";
     src: url("../../eros/Eros3D.ttf");
 }
@@ -10,7 +10,7 @@
 @font-face {
     font-family: "Verygood";
     src: url("../../eros/ErosBook.ttf");
-}
+} */
 
 .container {
     display: flex;
@@ -52,7 +52,7 @@
     flex-direction: column;
     justify-content: space-between;
     gap: 5px;
-    font-family: "Verygood";
+    font-family: "bood";
 }
 
 .description h1 {

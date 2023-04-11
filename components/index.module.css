@@ -52,7 +52,7 @@
     flex-direction: column;
     justify-content: space-between;
     gap: 5px;
-    font-family: "Verygood";
+    font-family: "bood";
 }
 
 .description h1 {
@@ -160,7 +160,7 @@
 
     align-items: center;
     text-align: center;
-    font-family: "Verygood";
+    font-family: "bood";
     color: white;
     padding: 15px 5px;
 }

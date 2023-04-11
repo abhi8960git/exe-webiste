@@ -1,4 +1,4 @@
-@font-face {
+/* @font-face {
     font-family: "eros";
     src: url("../eros/Eros.ttf");
 }
@@ -10,6 +10,11 @@
 @font-face {
     font-family: "Eros 3D";
     src: url("../eros/Eros3D.ttf");
+} */
+
+@font-face {
+    font-family: "bood";
+    src: url("../public/Shepherdy-BV85.ttf");
 }
 .header {
     width: fit-content;
@@ -18,15 +23,18 @@
 }
 
 .header h1 {
-    font-family: "Eros 3D";
+    font-family: "bood";
     color: rgb(7, 184, 248);
     padding-top: 90px;
     font-size: 10vw;
+    text-align: center;
+    /* text-transform: lowercase; */
+    
     text-shadow: 4px 4px 16px rgba(165, 62, 170, 0.817);
 }
 
 .header p {
-    font-family: "Eros";
+    font-family: "bood";
     font-weight: 100;
     color: rgb(47, 205, 230);
     text-align: center;
@@ -47,4 +55,9 @@
     bottom: 50px;
 
     border: 2px solid red;
+}
+
+
+.model{
+    margin-top: 50px;
 }

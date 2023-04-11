@@ -1,6 +1,6 @@
 @font-face {
-    font-family: "good";
-    src: url("../../eros/Eros3D.ttf");
+    font-family: "bood";
+    src: url("../../public/Shepherdy-BV85.ttf");
 }
 
 
@@ -13,7 +13,7 @@
 }
 
 .head {
-    font-family: "good";
+    font-family: "bood";
     margin: auto;
     text-align: center;
     padding: 40px;
@@ -50,7 +50,7 @@
 
 
 .name {
-    font-family: "Verygood";
+    font-family: "bood";
     margin: auto;
 
     text-align: center;

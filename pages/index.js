@@ -8,7 +8,9 @@ const Home = () => {
                 <h1>TEAM .EXE</h1>
                 <p>Executing Ideas</p>
             </div>
+               <div className={classes.model}>
                <Exe></Exe>
+               </div>
             <Main />
 
         </div>

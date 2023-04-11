@@ -1,4 +1,4 @@
-@font-face {
+/* @font-face {
     font-family: "eros";
     src: url("../eros/Eros.ttf");
 }
@@ -10,8 +10,12 @@
 @font-face {
     font-family: "Eros 3D";
     src: url("../eros/Eros3D.ttf");
-}
+} */
 
+@font-face {
+    font-family: "bood";
+    src: url("../public/Shepherdy-BV85.ttf");
+}
 *,
 *::before,
 *::after {
@@ -28,6 +32,10 @@
 html {
     font-size: 62.5%;
     scroll-behavior: smooth;
+    /* background: url('../public/D.jpeg'); */
+    /* background-repeat: no-repeat; */
+    scroll-behavior: smooth;
+
 }
 
 ::-webkit-scrollbar {
@@ -50,7 +58,11 @@ html {
 
 body {
     font-size: 1.6rem;
-    background: var(--bg);
+    /* background: var(--bg); */
+    /* background: black; */
+   
+    /* background-repeat: none; */
+    object-fit: contain;
     width: 100vw;
     overflow-x: hidden;
 }
@@ -61,3 +73,14 @@ body {
 
 
 
+.background{
+    position: fixed;
+    /* width: 100vw; */
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    
+    /* height:100vw; */
+    /* object-fit:cover; */
+    /* background-position: center; */
+}

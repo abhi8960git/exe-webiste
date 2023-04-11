@@ -8,12 +8,16 @@ import { AnimatePresence } from "framer-motion";
 import AnimatePages from "@/components/AnimatingPages/AnimatePages";
 import { useRouter } from "next/router";
 config.autoAddCss = false;
+import Image from "next/image";
+import background from "../public/back.jpg";
 
 export default function App({ Component, pageProps }) {
     const router = useRouter();
     return (
         <>
-            <Particle />
+            {/* <Particle /> */}
+
+            <Image className="background"   src={background}></Image>
             <AnimatePresence mode="wait">
                 <AnimatePages key={router.route}>
                     <Component {...pageProps} />
