@@ -4,7 +4,7 @@ import classes from "./Home.module.css";
 const Main = () => {
     return (
         <div className={classes.section}>
-            <Model className={classes.image} />
+            {/* <Model className={classes.image} /> */}
             <div className={classes.text}>
                 Our team, from the Computer Science & Engineering Department, is
                 dedicated to technology and innovation, and will showcase our
