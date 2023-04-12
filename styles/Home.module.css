@@ -26,7 +26,7 @@
     font-family: "bood";
     color: rgb(7, 184, 248);
     padding-top: 90px;
-    font-size: 10vw;
+    font-size: 9vw;
     text-align: center;
     /* text-transform: lowercase; */
     
@@ -36,9 +36,10 @@
 .header p {
     font-family: "bood";
     font-weight: 100;
-    color: rgb(47, 205, 230);
+    /* color: rgb(47, 205, 230); */
+    color:white;
     text-align: center;
-    font-size: 8vw;
+    font-size: 6vw;
     text-shadow: 2px 2px 8px rgba(146, 92, 148, 0.795);
 }
 

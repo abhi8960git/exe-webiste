@@ -15,14 +15,14 @@ const Home = () => {
 
             <div className={classes.midExe}>
 
-            <Image width={120} className={classes.left} src={left} alt="left"></Image>
+            {/* <Image width={120} className={classes.left} src={left} alt="left"></Image> */}
             <div className={classes.model}>
 
                 <Exe></Exe>
 
             </div>
 
-            <Image width={120} className={classes.right} src={right} alt="right"></Image>
+            {/* <Image width={120} className={classes.right} src={right} alt="right"></Image> */}
 
             </div>
             <Main />

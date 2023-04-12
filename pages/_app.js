@@ -11,7 +11,7 @@ import AnimatePages from "@/components/AnimatingPages/AnimatePages";
 import { useRouter } from "next/router";
 config.autoAddCss = false;
 import Image from "next/image";
-import background from "../public/back.jpg";
+import background from "../public/back.png";
 
 export default function App({ Component, pageProps }) {
     const router = useRouter();
