@@ -5,7 +5,7 @@
     display: flex;
     flex-direction: column;
     top: 50%;
-    transform: translateY(-50%);
+    transform: translateY(-57%);
     background-color: #f1f1f133;
     width: 70px;
     border-radius: 1vw;
@@ -48,6 +48,18 @@
 .navbar li:nth-child(4)::after {
     content: "Events";
 }
+.navbar li:nth-child(5)::after{
+    content:"Workshops";
+}
+
+.navbar li:nth-child(6)::after{
+    content:"Paradox";
+}
+
+.navbar li:nth-child(7)::after{
+    content:"Hall of Fame";
+}
+
 .navbar li::after {
     position: absolute;
     width: fit-content;
@@ -70,7 +82,8 @@
         top: auto;
         flex-direction: row;
         font-size: 10vw;
-        width: fit-content;
+        width: 60vw;
+        padding-inline:7px;
       backdrop-filter: blur(10px);
     }
 
@@ -91,10 +104,12 @@
         left: 2.1vw;
         top: -4vw;
         background-color: #000000bb;
+        border-radius: 3px;
+        /* background-color: transparent; */
         font-size: 2vw;
     }
 }
 
 .active svg {
-    background-color: black;
+    /* background-color: black; */
 }

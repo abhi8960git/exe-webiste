@@ -56,14 +56,17 @@
 }
 
 .description h1 {
-    font-size: 5vw;
+    font-size: 4vw;
     /* border: 2px solid white; */
 }
 
-.mentors {
-    font-size: 27px;
+.description h2{
+    color:white;
+    border:2px solid white;
+    padding:5px;
+    border-right: none;
+    border-left:none;
 }
-
 .detail {
     font-size: 17px;
 }
@@ -77,7 +80,7 @@
     }
 
     .description h1 {
-        font-size: 8vw;
+        font-size: 7vw;
     }
 
     .description {
@@ -101,7 +104,7 @@
     }
 
     .description h1 {
-        font-size: 10vw;
+        font-size: 8vw;
     }
 
     .description {
@@ -125,7 +128,7 @@
     }
 
     .description h1 {
-        font-size: 12vw;
+        font-size: 8vw;
     }
 
     .description {
@@ -165,13 +168,6 @@
     padding: 15px 5px;
 }
 
-.mentors {
-    border: 2px solid white;
-    display: inline;
-    padding: 7px;
-    border-left: none;
-    border-right: none;
-}
 
 .detail p {
     /* border: 2px solid wheat; */

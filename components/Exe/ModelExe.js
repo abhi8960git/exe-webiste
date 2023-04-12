@@ -1,10 +1,18 @@
 import React, { useRef } from "react";
+import { Canvas,useFrame } from "@react-three/fiber";
 import { useGLTF, useAnimations } from "@react-three/drei";
+import { OrbitControls } from "@react-three/drei"
 
 export function ModelExe(props) {
   const group = useRef();
   const { nodes, materials, animations } = useGLTF("/models/exe.glb");
   const { actions } = useAnimations(animations, group);
+  // useFrame(({ clock }) => {
+  //   group.current.rotation.y = Math.sin(clock.elapsedTime) * 0.9;
+  // });
+  useFrame((state, delta) => {
+    group.current.rotation.y += 1 * delta;
+  });
   return (
     <group ref={group} {...props} dispose={null}>
       <group name="Scene">

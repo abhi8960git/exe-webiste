@@ -4,13 +4,19 @@ import {
     faCircleInfo,
     faHome,
     faUsers,
+    faFileInvoice,
+    faTrophy,
+    faChartSimple,
+    faMobile
 } from "@fortawesome/free-solid-svg-icons";
 
 import classes from "./Navbar.module.css";
 import Link from "next/link";
 import { useRouter } from "next/router";
+import { useState } from "react";
 
 const Navbar = () => {
+    const [active, setActive] = useState(Boolean);
     const router = useRouter().pathname;
     return (
         <ul className={classes.navbar}>
@@ -62,6 +68,52 @@ const Navbar = () => {
                     ></FontAwesomeIcon>
                 </Link>
             </li>
+            <li>
+                <Link
+                    href="/Workshops"
+                    className={router == "/Workshops" ? classes.active : undefined}
+                >
+                    <FontAwesomeIcon
+                        style={{ fontSize: "25px" }}
+                        icon={faFileInvoice}
+                        // bounce
+                        // onMouseEnter={}
+                        
+                    ></FontAwesomeIcon>
+                </Link>
+            </li>
+
+
+            <li>
+                <Link
+                    href="/Events"
+                    className={router == "/Events" ? classes.active : undefined}
+                >
+                    <FontAwesomeIcon
+                        style={{ fontSize: "25px" }}
+                        icon={faMobile}
+                        // bounce
+                        // onMouseEnter={}
+                        
+                    ></FontAwesomeIcon>
+                </Link>
+            </li>
+
+            <li>
+                <Link
+                    href="/Events"
+                    className={router == "/Events" ? classes.active : undefined}
+                >
+                    <FontAwesomeIcon
+                        style={{ fontSize: "25px" }}
+                        icon={faTrophy}
+                        // bounce
+                        // onMouseEnter={}
+                        
+                    ></FontAwesomeIcon>
+                </Link>
+            </li>
+
         </ul>
     );
 };
