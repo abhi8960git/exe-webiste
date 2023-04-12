@@ -3,6 +3,7 @@ import emailjs from 'emailjs-com'
 // import "../../styles/contact.scss";
 import Exe from '@/components/Exe/Exe';
 
+
 const ContactUs = () => {
 
   const [name, setName] = useState('');
@@ -53,8 +54,8 @@ const ContactUs = () => {
                     </form>
                 </div>
             </div>
-            {/* <Exe> */}
-            <img src="D.jpeg" alt="logo" />
+            <Exe></Exe>
+            {/* <img src="D.jpeg" alt="logo" /> */}
         </div>
 
   )

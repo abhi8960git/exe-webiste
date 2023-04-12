@@ -7,16 +7,12 @@ const Card = (props) => {
         <div className="swiper-slide">
             <div className={styles.AboutUs}>
                 <div className={styles.teamImg}>
-                    <Image src={sai} width={300} alt="iamge"></Image>
+                    <Image src={props.image} width={300} height={400} alt="image"></Image>
                 </div>
 
                 <div className={styles.detail}>
-                    <h1>TEAM EXE</h1>
-                    <p>
-                        We are a team that upholds creativity and we
-                        continuously strive for excellence. Each year, we bring
-                        a plethora of projects and events in NIMBUS.
-                    </p>
+                    <h1>{props.title}</h1>
+                    <p>{props.detail}</p>
                 </div>
             </div>
         </div>

@@ -5,7 +5,10 @@ import css from "./AboutUs.module.css";
 import { Contact } from "../../components/index";
 
 
-const index = () => {
+const index = (props) => {
+
+    console.log(props);
+
     const [width, setWidth] = useState(0);
     const carousel = useRef();
 
@@ -28,21 +31,28 @@ const index = () => {
                     <motion.div ref={carousel} className={css.carousel}>
                         <motion.div drag="x" dragConstraints={{ right: 0, left: -width }} className={css.innerCarousel}>
 
-                            <motion.div className={css.Item}>
-                                <Card></Card>
-                            </motion.div>
 
-                            <motion.div className={css.Item}>
-                                <Card></Card>
-                            </motion.div>
+                            {
+                              props.data.map((event)=>(
 
-                            <motion.div className={css.Item}>
-                                <Card></Card>
-                            </motion.div>
+                                 <motion.div className={css.Item}>
+                                    
+                            {
+                                <Card
+                                key={event.id}
+                                image={event.image}
+                                detail={event.description}
+                                title={event.title}
 
-                            <motion.div className={css.Item}>
-                                <Card></Card>
+                                
+                                ></Card>
+                            }
+
                             </motion.div>
+                              ))
+                            }
+
+                          
 
                         </motion.div>
 
@@ -58,6 +68,19 @@ const index = () => {
 
         </>
     )
+}
+
+
+
+export async function getStaticProps() {
+    const response = await fetch("http://localhost:3000/api/AboutUs");
+    const data = await response.json();
+
+    return {
+        props: {
+            data,
+        },
+    };
 }
 
 export default index
