@@ -2,8 +2,7 @@ import { motion } from "framer-motion";
 import { useRef, useEffect, useState } from "react";
 import { Card } from "../../components/index";
 import css from "./AboutUs.module.css";
-import ContactUs from "../Events";
-
+import { Contact } from "../../components/index";
 
 
 const index = () => {
@@ -53,46 +52,8 @@ const index = () => {
 
                 </div>
 
-                {/* <ContactUs></ContactUs> */}
+                <Contact />
 
-                <div classname={css.ContactUs}>
-
-                    <div className={css.Container}>
-                        <h1>
-                            Contact Us
-                        </h1>
-
-                        <div className={css.InputDiv}>
-
-                            <div className={css.Inputs}>
-                                <label>
-                                    Email Us
-                                </label>
-
-                                <input className={css.input}></input>
-                            </div>
-
-                            <div>
-                                <label>
-                                    Email Us
-                                </label>
-
-                                <input></input>
-                            </div>
-
-                            <div >
-                                <label>
-                                    Email Us
-                                </label>
-                                <textarea></textarea>
-                            </div>
-
-                        </div>
-
-
-                    </div>
-
-                </div>
             </div>
 
         </>

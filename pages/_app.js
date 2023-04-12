@@ -1,4 +1,6 @@
 import "@/styles/globals.css";
+// import "@/styles/contact.scss";
+import "../styles/contact.scss";
 import "@fortawesome/fontawesome-svg-core/styles.css"; // import Font Awesome CSS
 import { config } from "@fortawesome/fontawesome-svg-core";
 import Particle from "@/components/Particle";

@@ -86,7 +86,7 @@ const Navbar = () => {
 
             <li>
                 <Link
-                    href="/Events"
+                    href="https://drive.google.com/drive/folders/1piIMksJwNvU-nWvGzOnv3N6h-dBw21HQ"
                     className={router == "/Events" ? classes.active : undefined}
                 >
                     <FontAwesomeIcon
@@ -101,7 +101,7 @@ const Navbar = () => {
 
             <li>
                 <Link
-                    href="/Events"
+                    href="https://lovely-hotteok-bae28e.netlify.app/"
                     className={router == "/Events" ? classes.active : undefined}
                 >
                     <FontAwesomeIcon

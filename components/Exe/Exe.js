@@ -7,7 +7,7 @@ import { OrbitControls, PerspectiveCamera } from "@react-three/drei";
 
 
 
-const Exe = () => {
+const Exe = (props) => {
     return (
         <div>
             <Canvas  style={{ height: '200px', width:"200px" }} camera={{fov: 40, zoom: 1, near: 1, far: 1500}}  >
