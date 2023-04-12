@@ -15,7 +15,7 @@ const EventCards = (props) => {
                             transition={{ delay: 1 + i * 0.1, duration: 0.5 }}
                         >
                             <Event
-                                key={event.id}
+                              key={event.id}
                                 title={event.title}
                                 image={event.image}
                                 detail={event.text}

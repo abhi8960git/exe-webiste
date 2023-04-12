@@ -9,6 +9,8 @@ const Event = (props) => {
                 <div className={styles.events}>
                     <div className={styles.card}>
                         <Image
+                        
+                            key={props.id}
                             src={props.image}
                             alt={props.title}
                             width={250}

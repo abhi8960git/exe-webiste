@@ -26,7 +26,7 @@ const Card = (props) => {
             >
                 {props.year.map((item) => (
                     <MemberCard
-                        key={item.id}
+                        key={item.key}
                         image={item.imageURL}
                         name={item.name}
                         tagline={item.tagline}
