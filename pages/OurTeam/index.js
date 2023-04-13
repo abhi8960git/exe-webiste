@@ -1,9 +1,19 @@
-import React from "react";
+import React, { useEffect } from "react";
 import css from "./ourTeam.module.css";
 import Card from "@/components/MemberCard/Card";
 import Slide from "@/components/MemberCard/Slide";
 
+
 const OurTeam = (props) => {
+
+    useEffect(
+        ()=>{
+
+
+        }
+    ,[])
+
+    console.log(members);
     const final = props.data.filter((item) => item.year == 4);
     const third = props.data.filter((item) => item.year == 3);
     const second = props.data.filter((item) => item.year == 2);
@@ -34,7 +44,7 @@ const OurTeam = (props) => {
 };
 
 export async function getStaticProps(context) {
-    const response = await fetch("http://localhost:3000/api/Member");
+    const response = await fetch(`${process.env.exe}/api/Member`);
     const data = await response.json();
     return {
         props: {

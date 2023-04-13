@@ -15,23 +15,24 @@ const AboutUs = [
     ,
     {
         id:3,
-        image:"",
+        image:"https://res.cloudinary.com/dcln4oee5/image/upload/v1681306801/IMG_5468_kk5kip.jpg",
         title:"OUR METHODOLOGY",
         description:"We respect each and every person’s expertise and come up together to make the best possible use of everyone’s expertise to build various projects."
-    }
-    ,
-    {
-        id:4,
-        image:"",
-        title:"OUR CONTRIBUTIONS",
-        description:"We strive to play the best possible role in promoting the Tech culture at our institute, whether through seminars, events, or guest lectures, we generate a variety of ideas and assist students."
     }
     ,
     {
         image:"https://res.cloudinary.com/dcln4oee5/image/upload/v1681289537/DSC_0035_2_-01_lg7poq.jpg",
         title:"DEDICATED TO EXCELLENCE",
         description:"We seek to perform at our highest level in the face of all adversity and to triumph over it in order to accomplish our goals."
+    },
+    {
+        id:4,
+        image:"https://res.cloudinary.com/dzf90zswv/image/upload/v1681307531/WhatsApp_Image_2023-04-12_at_19.19.51_zpkqvs.jpg",
+        title:"OUR CONTRIBUTIONS",
+        description:"We strive to play the best possible role in promoting the Tech culture at our institute, whether through seminars, events, or guest lectures, we generate a variety of ideas and assist students."
     }
+    
+   
      
     
      

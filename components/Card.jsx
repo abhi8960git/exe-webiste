@@ -7,7 +7,7 @@ const Card = (props) => {
         <div className="swiper-slide">
             <div className={styles.AboutUs}>
                 <div className={styles.teamImg}>
-                    <Image src={props.image} width={300} height={400} alt="image"></Image>
+                    <Image src={props.image} width={300} height={200} alt="image"></Image>
                 </div>
 
                 <div className={styles.detail}>

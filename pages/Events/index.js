@@ -23,7 +23,7 @@ const Events = (props) => {
 };
 
 export async function getStaticProps() {
-    const response = await fetch("http://localhost:3000/api/Events");
+    const response = await fetch(`${process.env.exe}/api/Events`);
     const data = await response.json();
 
     return {
@@ -31,5 +31,7 @@ export async function getStaticProps() {
             data,
         },
     };
+
+
 }
 export default Events;

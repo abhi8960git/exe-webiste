@@ -5,6 +5,7 @@ import css from "./AboutUs.module.css";
 import { Contact } from "../../components/index";
 
 
+
 const index = (props) => {
 
     console.log(props);
@@ -73,7 +74,7 @@ const index = (props) => {
 
 
 export async function getStaticProps() {
-    const response = await fetch("http://localhost:3000/api/AboutUs");
+    const response = await fetch(`${process.env.exe}/api/Aboutus`);
     const data = await response.json();
 
     return {

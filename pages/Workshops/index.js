@@ -24,7 +24,7 @@ const Workshop = (props) => {
 };
 
 export async function getStaticProps() {
-    const response = await fetch("http://localhost:3000/api/workshop");
+    const response = await fetch(`${process.env.exe}/api/workshop`);
     const data = await response.json();
 
     return {
